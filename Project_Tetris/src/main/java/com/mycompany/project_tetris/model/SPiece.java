@@ -9,5 +9,7 @@ public class SPiece extends Piece{
             {0,1,1},
             {1,1,0}
         };
+        setSizeX(shape[0].length);
+        setSizeY(shape.length);
     }
 }

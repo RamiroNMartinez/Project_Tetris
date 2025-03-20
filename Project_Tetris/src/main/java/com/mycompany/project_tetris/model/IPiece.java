@@ -8,5 +8,7 @@ public class IPiece extends Piece{
         shape = new int[][]{
             {1,1,1,1}
         };
+        setSizeX(shape[0].length);
+        setSizeY(shape.length);
     }
 }

@@ -116,8 +116,10 @@ public abstract class Piece {
 
         int aux = 0;
         while (aux < getSizeX()){
-            if (shape[getY()+getSizeY()-1][aux+getX()] == 1 && board.getBoard()[getY()+getSizeY()][aux+getX()] == 1)
+            if (shape[getY()+getSizeY()-1][aux+getX()] == 1 && board.getBoard()[getY()+getSizeY()][aux+getX()] == 1){
+                setInactive();
                 return true;
+            }
             aux++;
         }
         return false;
